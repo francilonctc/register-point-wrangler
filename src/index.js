@@ -74,7 +74,7 @@ const clockIn = async (env) => {
 	const inicio = new Date();
 
 	try {
-		if (!isWithinAllowedWindow([11, 15, 16, 20], 5)) {
+		if (!isWithinAllowedWindow([14, 17, 18, 23], 5)) {
 			await sendTelegram(env, 'Ponto não registrado: fora do horário permitido.');
 			return new Response('skipped');
 		}
