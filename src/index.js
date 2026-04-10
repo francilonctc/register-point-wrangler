@@ -106,7 +106,7 @@ const clockIn = async (env) => {
 		]);
 		
 		await page.waitForSelector('.btn-success', { timeout: 20000 });
-	//	await page.click('.btn-success');
+		await page.click('.btn-success');
 		
 		const fim = new Date();
 		await sendTelegram(env, buildMessage(inicio, fim, 'Ponto registrado com sucesso'));
